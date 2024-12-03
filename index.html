@@ -3,49 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bouncing Ball</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            25% {
+                transform: translateY(-190px); 
+            }
+            50% {
+                transform: translateY(0); 
+            }
+            75% {
+                transform: translateY(-99px); 
+            }
+            100% {
+                transform: translateY(199); 
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">
-            <h1>ShopEasy</h1>
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="cart">
-            <a href="#cart">Cart (0)</a>
-        </div>
-    </header>
+    <div class="ball"></div>
 
-    <!-- Main Content -->
-    <main>
-        <section id="home">
-            <h2>Welcome to ShopEasy</h2>
-            <p>Discover amazing deals and quality products at your fingertips.</p>
-        </section>
-        <section id="products">
-            <h2>Our Products</h2>
-            <p>Explore our wide range of items tailored to your needs.</p>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 ShopEasy. All Rights Reserved.</p>
-        <div class="social">
-            <a href="#facebook">Facebook</a>
-            <a href="#twitter">Twitter</a>
-            <a href="#instagram">Instagram</a>
-        </div>
-    </footer>
+    <video src=""></video>
 </body>
 </html>
-
