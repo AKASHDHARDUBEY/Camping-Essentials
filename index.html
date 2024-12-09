@@ -1,59 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bouncing Ball</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            overflow: hidden;
-        }
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>camping-Essentials</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
 
-        .ball {
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            border-radius: 50%;
-            position: absolute;
-            animation: bounce 2s ease-in-out infinite;
-        }
 
+    <!-- navbar created -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">camping-Essentials</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#our-prices"
+                >Our prices</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#our-services"
+                >Our Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact-us"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <li class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- carousel created -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="a.webp" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to camping-Essentials</h5>
+            <p>We help you in all type of Camping Accessories</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="b.webp" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to camping-Essential</h5>
+            <p>We help you in all type of Camping Accessories</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="d.webp" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Welcome to camping-Essential</h5>
+            <p>We help you in all type of Camping Accessories</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <section id="our-prices">
+        <div class="container border border-danger-subtle mt-5">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-white">The Ultimate Camping Gear Checklist for 2024</h1>
+            <p class="fs-5 text-primary">Our comprehensive camping gear checklist will help you make the most of your camping trip</p>
+          </div>
+
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 Camping Guides</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center </li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 Camping Guides</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>No User Limit</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="our-services">
+      <h1 class="text-white text-center mt-5">Our services</h1>
+
+      <!-- cards creation  -->
+      <div class="container">
+      <div class="row mb-2 mt-5" >
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-warning"
+                >Welcome to camping-Essentials</strong
+              >
+              <h3 class="mb-0 text-white">Lets begin the  Tent</h3>
+              <p class="card-text mb-auto text-light">
+                A Tent - available in a variety of sizes, a good rule of thumb is to aim for a tent that sleeps 1 or 2 people more than you need, for space for all your camping essentials
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img src="tent.webp" alt=""  class="bd-placeholder-img"
+                width="250"
+                height="250">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-warning"
+                  >Welcome to camping-Essentials</strong
+                >
+                <h3 class="mb-0 text-white">Lets begin the Sleeping Bags </h3>
+                <p class="card-text mb-auto text-light">
+                    Sleeping Bags offering the perfect night's sleep in the outdoors! Available in two to four-season variations, sleeping bags offer warmth and comfort for all-season camping.
+                </p>
+                <a
+                  href="#"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                >
+                  Continue reading
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                  <img src="sleepl.jpg" alt=""  class="bd-placeholder-img"
+                  width="250"
+                  height="250">
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row mb-2 mt-5" >
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-warning"
+                >Welcome to coding</strong
+              >
+              <h3 class="mb-0 text-white">Lets begin the Camping Stove </h3>
+              <p class="card-text mb-auto text-light">
+                Camping Stove - a versatile method for cooking meals and heating water in the outdoors. Don't forget to take the correct type of fuel for your camping stove model!
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+                Continue reading
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img src="Camping Stove.jpeg" alt=""  class="bd-placeholder-img"
+                width="250"
+                height="250">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div
+              class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-warning"
+                  >Welcome to camping essentials</strong
+                >
+                <h3 class="mb-0 text-white">Lets begin the Cutlery</h3>
+                <p class="card-text mb-auto text-light">
+                    Cutlery - remember to bring something to eat your delicious outdoor meals with. Plastic cutlery for camping is a convenient choice.
+                </p>
+                <a
+                  href="#"
+                  class="icon-link gap-1 icon-link-hover stretched-link"
+                >
+                  Continue reading
+                  <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                  <img src="Cutlery.jpeg" alt=""  class="bd-placeholder-img"
+                  width="250"
+                  height="250">
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mt-5" >
+            <div class="col-md-6">
+              <div
+                class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+              >
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-warning"
+                    >Welcome to camping essentials</strong
+                  >
+                  <h3 class="mb-0 text-white">Lets begin the Camping Chairs </h3>
+                  <p class="card-text mb-auto text-light">
+                    Camping Chairs - the best way to relax in the sun is on a comfy folding lounger or chair.
+                  </p>
+                  <a
+                    href="#"
+                    class="icon-link gap-1 icon-link-hover stretched-link"
+                  >
+                    Continue reading
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                  </a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <img src="Camping Chairs .jpg" alt=""  class="bd-placeholder-img"
+                    width="250"
+                    height="250">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                  class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                >
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-warning"
+                      >Welcome to coding</strong
+                    >
+                    <h3 class="mb-0 text-white">Lets begin the Torches and Lanterns</h3>
+                    <p class="card-text mb-auto text-light">
+                        Torches and Lanterns for lighting the tent in the evening, and any night-time trips to the loo (don't forget extra batteries!).
+
+                    </p>
+                    <a
+                      href="#"
+                      class="icon-link gap-1 icon-link-hover stretched-link"
+                    >
+                      Continue reading
+                      <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                    </a>
+                  </div>
+                  <div class="col-auto d-none d-lg-block">
+                      <img src="Torches and Lanterns .jpeg" alt=""  class="bd-placeholder-img"
+                      width="250"
+                      height="250">
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>  
+    </section>
+
+    <section id="contact-us">
         
-        @keyframes bounce {
-            0% {
-                transform: translateY(0);
-            }
-            25% {
-                transform: translateY(-190px); 
-            }
-            50% {
-                transform: translateY(0); 
-            }
-            75% {
-                transform: translateY(-99px); 
-            }
-            100% {
-                transform: translateY(199); 
-            }
-        }
-    </style>
+        <div class="container border border-primary">
+            <h1 class="text-white text-center mt-5">Contact us</h1>
+        <form class="p-5">
+            <div class="row my-3">
+                <div class="col">
+                    <label for="exampleInputEmail1" class="form-label text-white">First Name</label>
 
+                  <input type="text" class="form-control" placeholder="Enter Your First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <label for="exampleInputEmail1" class="form-label text-white">Last Name</label>
 
+                  <input type="text" class="form-control" placeholder="Enter Your Last name" aria-label="Last name">
+                </div>
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-white">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your E-mail Address">
+              <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label text-white">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label text-white">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="col-md-3">
+                <label for="inputCity" class="form-label text-white">City</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-3">
+                <label for="inputState" class="form-label text-white">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label text-white">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+            
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+    </section>
 
-</head>
-<body>
-    <div class="ball"></div>
-    <p>hi boll</p>
-<p> jahkjg uigud iug iugd ug gfsd g ugu  gusdgisu iguiud iug i gid iu ig diu igi diu igufdiusd
     
-</p>
-    <video src=""></video>
-</body>
+    <footer class="py-5 text-center text-body-secondary bg-dark mt-5">
+        <p class="text-white">Blog template built for <a href="https://getbootstrap.com/">camping-Essentials</a> by <a href="https://twitter.com/mdo">Akash DAHR dubey</a>.</p>
+        <p class="mb-0">
+          <a href="#">Back to top</a>
+        </p>
+      </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
