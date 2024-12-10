@@ -104,26 +104,108 @@ font-size: 20px;
 <!-- Add the logo image -->
 <img src="photo/logo.png" alt="Camping Essentials Logo" width="50" height="50" class="logo-img">
 <span>Camping Essentials</span>
+
+<div class="spinner-grow" role="status">
+<span class="visually-hidden">Loading...</span>
 </div>
+</div>
+
+
+
+
+
+
+
+
 <nav>
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="gearchecklist.html">Gear Checklist</a></li>
-<li><a href="clothing-tips.html">Clothing Tips</a></li>
-<li><a href="safety.html">Safety & First Aid</a></li>
-<li><a href="cooking.html">Food & Cooking</a></li>
-<li><a href="navigation.html">Navigation & Tools</a></li>
-<li><a href="setup.html">Camp Setup</a></li>
-<li><a href="leave-no-trace.html">Leave No Trace     .</a></li>
+<!-- <ul class="nav-links" >  -->
+<!-- <li style="display: inline;"> -->
+<nav>
+<ul class="nav-links" style="list-style: none; padding: 0; margin: 0; display: flex; gap: 10px;">
+<li style="display: inline;">
+<a href="index.html" 
+style="text-decoration: none; padding: 5px 5px; display: inline-block; color: white; transition: background-color 0.3s, color 0.3s, transform 0.3s; background-color: ''; color: '';" 
+onmouseover="this.style.backgroundColor='lightblue'; this.style.color='white';"
+onmouseout="if (!this.clicked) this.style.backgroundColor=''; this.style.color='';"
+onclick="this.clicked = true; this.style.backgroundColor='orange'; this.style.color='white';">
+Home
+</a>
+</li>
+<li style="display: inline;">
+<a href="gearchecklist.html" 
+style="text-decoration: none; padding: 5px 5px; display: inline-block; color: white; transition: background-color 0.3s, color 0.3s, transform 0.3s; background-color: ''; color: '';" 
+onmouseover="this.style.backgroundColor='lightblue'; this.style.color='white';"
+onmouseout="if (!this.clicked) this.style.backgroundColor=''; this.style.color='';"
+onclick="this.clicked = true; this.style.backgroundColor='orange'; this.style.color='white';">
+Gear Checklist
+</a>
+</li>
+<li style="display: inline;">
+<a href="clothing-tips.html" 
+style="text-decoration: none; padding: 5px 5px; display: inline-block; color: white; transition: background-color 0.3s, color 0.3s, transform 0.3s; background-color: ''; color: '';" 
+onmouseover="this.style.backgroundColor='lightblue'; this.style.color='white';"
+onmouseout="if (!this.clicked) this.style.backgroundColor=''; this.style.color='';"
+onclick="this.clicked = true; this.style.backgroundColor='orange'; this.style.color='white';">
+Clothing Tips
+</a>
+</li>
+<li style="display: inline;">
+<a href="safety.html" 
+style="text-decoration: none; padding: 5px 5px; display: inline-block; color: white; transition: background-color 0.3s, color 0.3s, transform 0.3s; background-color: ''; color: '';" 
+onmouseover="this.style.backgroundColor='lightblue'; this.style.color='white';"
+onmouseout="if (!this.clicked) this.style.backgroundColor=''; this.style.color='';"
+onclick="this.clicked = true; this.style.backgroundColor='orange'; this.style.color='white';">
+Safety & First Aid
+</a>
+</li>
+<li style="display: inline;">
+<a href="cooking.html" 
+style="text-decoration: none; padding: 5px 5px; display: inline-block; color: white; transition: background-color 0.3s, color 0.3s, transform 0.3s; background-color: ''; color: '';" 
+onmouseover="this.style.backgroundColor='lightblue'; this.style.color='white';"
+onmouseout="if (!this.clicked) this.style.backgroundColor=''; this.style.color='';"
+onclick="this.clicked = true; this.style.backgroundColor='orange'; this.style.color='white';">
+Food & Cooking
+</a>
+</li>
+<li style="display: inline;">
+<a href="navigation.html" 
+style="text-decoration: none; padding: 5px 5px; display: inline-block; color: white; transition: background-color 0.3s, color 0.3s, transform 0.3s; background-color: ''; color: '';" 
+onmouseover="this.style.backgroundColor='lightblue'; this.style.color='white';"
+onmouseout="if (!this.clicked) this.style.backgroundColor=''; this.style.color='';"
+onclick="this.clicked = true; this.style.backgroundColor='orange'; this.style.color='white';">
+Navigation & Tools
+</a>
+</li>
+<li style="display: inline;">
+<a href="setup.html" 
+style="text-decoration: none; padding: 5px 5px; display: inline-block; color: white; transition: background-color 0.3s, color 0.3s, transform 0.3s; background-color: ''; color: '';" 
+onmouseover="this.style.backgroundColor='lightblue'; this.style.color='white';"
+onmouseout="if (!this.clicked) this.style.backgroundColor=''; this.style.color='';"
+onclick="this.clicked = true; this.style.backgroundColor='orange'; this.style.color='white';">
+Camp Setup
+</a>
+</li>
+<li style="display: inline;">
+<a href="leave-no-trace.html" 
+style="text-decoration: none; padding: 5px 5px; display: inline-block; color: white; transition: background-color 0.3s, color 0.3s, transform 0.3s; background-color: ''; color: '';" 
+onmouseover="this.style.backgroundColor='lightblue'; this.style.color='white';"
+onmouseout="if (!this.clicked) this.style.backgroundColor=''; this.style.color='';"
+onclick="this.clicked = true; this.style.backgroundColor='orange'; this.style.color='white';">
+Leave No Trace
+</a>
+</li>
 </ul>
 </nav>
+
+
+
 </header>
 
 <!-- blavck navbar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
 <div class="container-fluid">
 
-
+<button type="button" class="btn-close" aria-label="Close"></button>
 
 <div class="spinner-border" role="status">
 <span class="visually-hidden">Loading...</span>
@@ -182,6 +264,7 @@ SHOP BY ACTIVITY
 </div>
 </div>
 </nav>
+
 
 
 <!-- ADD LINE -->
@@ -262,6 +345,31 @@ SHOP BY ACTIVITY
 
 
 
+
+
+
+
+
+
+
+
+
+<div class="input-group has-validation">
+  <span class="input-group-text">@</span>
+  <div class="form-floating is-invalid">
+    <input type="text" class="form-control is-invalid" id="floatingInputGroup2" placeholder="Username" required>
+    <label for="floatingInputGroup2">Username</label>
+  </div>
+  <div class="invalid-feedback">
+    Please choose a username.
+  </div>
+</div>
+
+
+
+
+
+
 <!-- about -->
 <button
 class="carousel-control-prev"
@@ -282,12 +390,27 @@ data-bs-slide="next"
 <span class="visually-hidden">Next</span>
 </button>
 </div>
+
+
+
 <section id="our-prices">
 <div class="container border border-danger-subtle mt-5">
 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-<h1 class="display-4 fw-normal text-white">The Ultimate Camping Gear Checklist for 2024</h1>
-<p class="fs-5 text-primary">Our comprehensive camping gear checklist will help you make the most of your camping trip</p>
+<h1 class="display-4 fw-normal text-white" style="color: #fb0606;"><p style="color: #010101;">The Ultimate Camping Gear Checklist for 2024</p></h1>
+<p class="fs-5 text-primary" style="color: black;"><p style="color: red;">Our comprehensive camping gear checklist will help you make the most of your camping trip</p>
 </div>
+
+<div class="text-center mb-3">
+  <label for="customRange1" class="form-label">**Prices Range **</label>
+  <input type="range" class="form-range" id="customRange1" min="1" max="100" step="1" style="width: 100%;" oninput="updateRangeValue(this)">
+  <span id="rangeValue" style="font-weight: bold; font-size: 1.25rem;">$1</span>
+</div>
+
+<script>
+  function updateRangeValue(input) {
+    document.getElementById('rangeValue').textContent = `$${input.value}`;
+  }
+</script>
 
 <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
 <div class="col">
@@ -345,7 +468,7 @@ data-bs-slide="next"
 </div>
 </section>
 <section id="our-services">
-<h1 class="text-white text-center mt-5">Our services</h1>
+<h1 class="text-white text-center mt-5" style="color: #060505f2;" > <p>Our services</p></h1>
 
 <!-- cards creation  -->
 <div class="container">
@@ -596,33 +719,8 @@ height="250">
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Main Content -->
-<main style="background-color: #7e7622; ">
+<main style="background-color: #c6f10744; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=t ">
 <!-- Introduction Section -->
 <section id="intro" class="section" style="background-color: #f0f0f0; padding: 20px; text-align: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZTUkMdPzFpRCdvJ4yQpgVfsMQZu0ArTIZBOtXkVDJOWsuwwCa6AR0ckDa9lkJ813oqlE&usqp=CAU);">
 <h1 style="color: #f0f0f0;">Welcome to Your Ultimate Camping Essentials Guide!</h1>
@@ -631,11 +729,11 @@ height="250">
 </section>
 
 <!-- Gear Checklist -->
-<section id="gear" class="section" style="padding: 20px; text-align: center;">
-<h2>Gear Checklist</h2>
-<p>Ensure your adventure is stress-free with our comprehensive gear checklist, including tents, sleeping bags, and cooking essentials.</p>
+<section id="gear" class="section" style="padding: 20px; text-align: center; background-image: url(https://www.naturehike.com/cdn/shop/files/tent2.jpg?v=1715754910);">
+<h2 style="color: #f0f0f0;">Gear Checklist</h2>
+<p style="color: #f9f9f9;">Ensure your adventure is stress-free with our comprehensive gear checklist, including tents, sleeping bags, and cooking essentials.</p>
 <img src="photo/gear checklist.jpg" alt="Camping gear" style="width: 100%; max-width: 300px; margin: 10px 0;">
-<ul style="list-style: none; padding: 0; line-height: 1.8; text-align: left; margin: 0 auto; max-width: 300px;">
+<ul style="list-style: none; padding: 0; line-height: 1.8; text-align: left; margin: 0 auto; max-width: 300px; color: #ddd;">
 <li>Tent and stakes</li>
 <li>Sleeping bag and pad</li>
 <li>Portable stove and cookware</li>
@@ -645,44 +743,44 @@ height="250">
 </section>
 
 <!-- Clothing Tips -->
-<section id="clothing" class="section" style="padding: 20px; text-align: center;">
-<h2>Clothing Tips</h2>
+<section id="clothing" class="section" style="padding: 20px; text-align: center; background-image: url(https://i0.wp.com/trailtopeak.com/wp-content/uploads/2014/12/dsc032371.jpg?resize=840%2C560&ssl=1); ">
+<h2 style="color: #f9f9f9;">Clothing Tips</h2>
 <p style="color: #fff;">Dress appropriately for every weather condition. Learn about layering, footwear, and the right fabrics to keep you comfortable and safe.</p>
 <img src="photo/clothing-including-yellow-tent-red-jacket_248459-74749.jpg" alt="Clothing tips" style="width: 100%; max-width: 300px; margin: 10px 0;">
 </section>
 
 <!-- Safety and First Aid -->
-<section id="safety" class="section" style="padding: 20px; text-align: center;">
-<h2>Safety & First Aid</h2>
-<p>Stay prepared with our safety tips and a list of first aid essentials. From knowing local wildlife to basic CPR, your safety is our priority.</p>
+<section id="safety" class="section" style="padding: 20px; text-align: center; background-image: url(https://i.pinimg.com/736x/6b/b2/d3/6bb2d35466ac4903e467dc0c7756f27a.jpg);">
+<h2 style="color: #f0f0f0;">Safety & First Aid</h2>
+<p style="color: #f0f0f0;">Stay prepared with our safety tips and a list of first aid essentials. From knowing local wildlife to basic CPR, your safety is our priority.</p>
 <img src="photo/first ad.jpeg" alt="Safety and first aid" style="width: 100%; max-width: 300px; margin: 10px 0;">
 </section>
 
 <!-- Food and Cooking -->
-<section id="cooking" class="section" style="padding: 20px; text-align: center;">
-<h2>Food & Cooking</h2>
+<section id="cooking" class="section" style="padding: 20px; text-align: center; background-image: url(https://i0.wp.com/trailtopeak.com/wp-content/uploads/2014/12/dsc032371.jpg?resize=840%2C560&ssl=1);">
+<h2 style="color: #f0f0f0;">Food & Cooking</h2>
 <p style="color: #fff;">Enjoy the best campfire meals with our cooking tips and meal ideas. Learn how to store food safely and keep animals away.</p>
 <img src="photo/food and cooking.jpeg" alt="Food and cooking" style="width: 100%; max-width: 300px; margin: 10px 0;">
 </section>
 
 <!-- Navigation and Tools -->
-<section id="navigation" class="section" style="padding: 20px; text-align: center;">
-<h2>Navigation & Tools</h2>
-<p>Find your way with maps, compasses, and GPS devices. Never get lost with our easy-to-follow navigation tips.</p>
+<section id="navigation" class="section" style="padding: 20px; text-align: center; background-image: url(https://i.pinimg.com/736x/6b/b2/d3/6bb2d35466ac4903e467dc0c7756f27a.jpg);">
+<h2 style="color: #f9f9f9;">Navigation & Tools</h2>
+<p style="color: #f9f9f9;">Find your way with maps, compasses, and GPS devices. Never get lost with our easy-to-follow navigation tips.</p>
 <img src="photo/na tools.jpeg" alt="Navigation tools" style="width: 100%; max-width: 300px; margin: 10px 0;">
 </section>
 
 <!-- Camp Setup -->
-<section id="setup" class="section" style="padding: 20px; text-align: center;">
-<h2>Camp Setup Tips</h2>
+<section id="setup" class="section" style="padding: 20px; text-align: center; background-image: url(https://i0.wp.com/trailtopeak.com/wp-content/uploads/2014/12/dsc032371.jpg?resize=840%2C560&ssl=1);">
+<h2 style="color: #f9f9f9;">Camp Setup Tips</h2>
 <p style="color: #fff;">Master the art of setting up a comfortable and safe campsite. Choose the right location and keep everything organized for a stress-free trip.</p>
 <img src="photo/comping setuo.jpeg" alt="Camp setup" style="width: 100%; max-width: 300px; margin: 10px 0;">
 </section>
 
 <!-- Leave No Trace Principles -->
-<section id="leave-no-trace" class="section" style="padding: 20px; text-align: center;">
-<h2>Leave No Trace Principles</h2>
-<p>Protect the environment by following these simple but crucial principles. Let’s preserve nature for generations to come.</p>
+<section id="leave-no-trace" class="section" style="padding: 20px; text-align: center; background-image: url(https://i.pinimg.com/736x/6b/b2/d3/6bb2d35466ac4903e467dc0c7756f27a.jpg);">
+<h2 style="color: #f9f9f9;">Leave No Trace Principles</h2>
+<p style="color: #f0f0f0;">Protect the environment by following these simple but crucial principles. Let’s preserve nature for generations to come.</p>
 <img src="photo/Leave-No-Trace.png" alt="Leave no trace principles" style="width: 100%; max-width: 300px; margin: 10px 0;">
 </section>
 </main>
@@ -715,7 +813,7 @@ height="250">
 </div>
 <div class="col-12">
 <label for="inputAddress" class="form-label text-white">Address</label>
-<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+<input type="text" class="form-control" id="inputAddress" placeholder="14/12 Sangam prayagraj">
 </div>
 <div class="col-12">
 <label for="inputAddress2" class="form-label text-white">Address 2</label>
@@ -736,7 +834,14 @@ height="250">
 <label for="inputZip" class="form-label text-white">Zip</label>
 <input type="text" class="form-control" id="inputZip" placeholder=" Enter Your PIN Code">
 </div>
-
+<div class="col-12">
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+    <label class="form-check-label" for="invalidCheck2">
+      <p style="color: #ffffff;">Agree to terms and conditions</p>
+    </label>
+  </div>
+</div>
 <div class="mb-3 form-check">
 <input type="checkbox" class="form-check-input" id="exampleCheck1">
 <label class="form-check-label text-white" for="exampleCheck1">Check me out</label>
