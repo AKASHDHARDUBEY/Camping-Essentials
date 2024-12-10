@@ -58,7 +58,9 @@ p, ul {
 .section {
     padding: 50px 20px;
     max-width: 800px;
-    margin: 0 auto;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .section:nth-child(even) {
