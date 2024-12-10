@@ -37,8 +37,7 @@ Camping-Essentials/
 ├── index.html
 ├── css/
 │   └── styles.css
-├── js/
-│   └── script.js (if applicable)
+
 ├── images/
 │   └── (All images used in the website)
 └── README.md
@@ -52,3 +51,4 @@ Camping-Essentials/
 
 ---
 We hope this website inspires adventurers to gear up for their next camping trip!
+
