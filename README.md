@@ -51,4 +51,4 @@ Camping-Essentials/
 
 ---
 We hope this website inspires adventurers to gear up for their next camping trip!
-
+............................................................................
