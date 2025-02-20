@@ -41,7 +41,7 @@ Camping-Essentials/
 ├── images/
 │   └── (All images used in the website)
 └── README.md
-```
+```,,,,,,
 
 ## Future Enhancements
 - Add interactive elements like carousels or modals.
